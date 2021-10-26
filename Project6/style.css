@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root {
+    --font: 'Roboto', sans-serif;
+}
+
+body {
+    background-image: url("img/bg.jpg");
+}
+
+.general {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+#logo {
+    background-image: url("img/lenovologo.png");
+    width: 400px;
+    height: 140px;
+    position: absolute;
+    left: 50%;
+    top: -300px;
+    transform: translate(-50%, 0);
+    animation-name: logo;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+
+@keyframes logo {
+    from {
+        top: -300px;
+    }
+    to {
+        top: 50px;
+    }
+}
+
+#comp2 {
+    background-image: url("img/lenovocomp3.png");
+    position: absolute;
+    width: 600px;
+    height: 450px;
+    bottom: 0;
+    left: -500px;
+    transform: translate(-50%, 0);
+    animation-name: computer;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+
+@keyframes computer {
+    from {
+        left: -500px;
+    }
+    to {
+        left: 300px;
+    }
+}
+
+.general h1 {
+    display: inline;
+    position: absolute;
+    left: 50%;
+    bottom: -300px;
+    font: 700 36px var(--font);
+    color: rgb(173, 38, 38);
+    transform: translate(-50%, 0);
+    animation-name: heading;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+
+@keyframes heading {
+    from {
+        bottom: -300px;
+    }
+    to {
+        bottom: 300px;
+    }
+}
+
+.general p {
+    position: absolute;
+    font: 400 20px var(--font);
+    width: 400px;
+    letter-spacing: 1px;
+    right: -300px;
+    bottom: 50px;
+    border: rgb(173, 38, 38) 4px solid;
+    padding: 10px;
+    border-style: dotted;
+    transform: translate(-50%, 0);
+    animation-name: paragraph;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+
+@keyframes paragraph {
+    from {
+        right: -300px;
+    }
+    to {
+        right: -120px;
+    }
+}
